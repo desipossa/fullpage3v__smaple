@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/fullpage.min.js"></script>
+    <script src="./js/custom.js" defer></script>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <style>
+        .box {
+            filter: url(#goo);
+            width: 400px;
+            height: 100px;
+        }
+
+        .box::before {
+            content: "";
+            display: block;
+            width: 400px;
+            height: 400px;
+            background: tomato;
+            border-radius: 50%;
+        }
+
+        .box::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            transform: translate(50px, -100px);
+            border-radius: 50%;
+            transition: 2s;
+        }
+
+        .box:hover::after {
+            transform: translate(450px, -100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="section">
+
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -10"
+                    result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+</body>
+
+</html>
