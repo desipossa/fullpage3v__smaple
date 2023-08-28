@@ -1,0 +1,16 @@
+.inner {
+    max-width: 1442px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.d_flex {
+    display: flex;
+    gap: 30px;
+}
+
+.d_flex>* {
+    flex: 1;
+    min-width: 0;
+}

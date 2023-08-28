@@ -170,6 +170,21 @@
     height: 10px;
     background: #fff;
     border-radius: 2px;
+    animation: wheel 0.5s infinite linear;
+}
+
+@keyframes wheel {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 3px);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
 
 .aside {
