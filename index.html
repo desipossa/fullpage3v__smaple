@@ -66,6 +66,11 @@
             </div>
         </section>
         <section class="section page02">
+            <div class="boxs">
+                <div class="x01">01</div>
+                <div class="x02">02</div>
+            </div>
+
             <div class="inner">
                 <h2>CREATE A PERSON'S STORY</h2>
                 <p>S&amp;S는 사람과 공간이 함께 어울릴 수 있도록 더 풍요롭고 더 맛있는 기회와 가치를 제공합니다.</p>
@@ -130,6 +135,17 @@
             f
         </footer>
     </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                    result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
 </body>
 
 </html>
