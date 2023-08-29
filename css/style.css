@@ -314,6 +314,7 @@
 
 .page03 .inner {
     gap: 100px;
+    overflow: hidden;
 }
 
 .page03 .img_box {
