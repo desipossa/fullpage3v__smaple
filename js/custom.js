@@ -1,5 +1,5 @@
 
-const ASIDE = document.querySelectorAll('.aside li');
+const ASIDE = document.querySelectorAll('.m_link li');
 const SECTION = document.querySelectorAll('.section');
 
 new fullpage('#main', {

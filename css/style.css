@@ -312,6 +312,10 @@
     font-size: 120px;
 }
 
+.page03 {
+    background: #F5F2ED url(../images/main_ourbg_icn.png) no-repeat right bottom;
+}
+
 .page03 .inner {
     gap: 100px;
     overflow: hidden;
@@ -373,18 +377,18 @@
 }
 
 
-.aside {
+.m_link {
     position: fixed;
     inset: 50% 80px auto auto;
     z-index: 999;
     transform: translate(0, -50%);
 }
 
-.aside ul li {
+.m_link ul li {
     margin: 0 0 4px 0;
 }
 
-.aside ul li a {
+.m_link ul li a {
     display: block;
     width: 16px;
     height: 16px;
@@ -392,6 +396,6 @@
     font-size: 0;
 }
 
-.aside ul li.on a {
+.m_link ul li.on a {
     border-radius: 50%;
 }
