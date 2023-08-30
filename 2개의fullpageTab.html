@@ -16,6 +16,26 @@
     <link rel="stylesheet" href="./css/fullpage.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
+
+    function showTab1(){
+    fullpage_api.destroy('all');
+
+    // loading HTML for tab1
+    loadHTML();
+
+    new fullpage('#fullpage', options);
+    }
+
+    function showTab2(){
+    fullpage_api.destroy('all');
+
+    // loading HTML for tab2
+    loadHTML();
+
+    new fullpage('#fullpage', options);
+    }
+
+
 </head>
 
 <body>

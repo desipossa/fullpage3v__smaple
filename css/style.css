@@ -401,6 +401,23 @@
     padding: 12px 24px;
 }
 
+.port_img {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+    border: 10px solid #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+.port_img img {
+    transform: translate(0, 0);
+    transition: 1s;
+}
+
+.port_img:hover img {
+    transform: translate(0, calc(-100% + 400px));
+}
+
 
 .m_link {
     position: fixed;
