@@ -401,6 +401,15 @@
     padding: 12px 24px;
 }
 
+.page05 .itm h3 {
+    font-size: 30px;
+    transition: 1s 1s;
+}
+
+.page05 .itm.on h3 {
+    font-size: 100px;
+}
+
 .port_img {
     width: 720px;
     height: 400px;
